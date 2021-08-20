@@ -1,0 +1,1 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):((e="undefined"!=typeof globalThis?globalThis:e||self).template=e.template||{},e.template.jslib=e.template.jslib||{},e.template.jslib.rollup=t())}(this,function(){"use strict";var e={version:"0.0.1",name:"template.jslib.rollup"};return e});
