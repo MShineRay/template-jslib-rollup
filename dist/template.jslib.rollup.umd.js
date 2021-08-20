@@ -1,1 +1,19 @@
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):((e="undefined"!=typeof globalThis?globalThis:e||self).template=e.template||{},e.template.jslib=e.template.jslib||{},e.template.jslib.rollup=t())}(this,function(){"use strict";var e={version:"0.0.1",name:"template.jslib.rollup"};return e});
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, (global.template = global.template || {}, global.template.jslib = global.template.jslib || {}, global.template.jslib.rollup = factory()));
+}(this, (function () { 'use strict';
+
+  var name = "template.jslib.rollup";
+  var version = "0.0.1";
+
+  /*!
+   * xxx
+   */
+  var jsUtils = {};
+  jsUtils.version = version;
+  jsUtils.name = name;
+
+  return jsUtils;
+
+})));

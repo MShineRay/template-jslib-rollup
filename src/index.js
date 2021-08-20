@@ -1,3 +1,6 @@
+/*!
+ * xxx
+ */
 import version from './version'
 import name from './name'
 const jsUtils = {}

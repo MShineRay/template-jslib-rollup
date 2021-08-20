@@ -1,7 +1,5 @@
 /**
  * @reference:
- * https://eslint.vuejs.org/
- * https://eslint.vuejs.org/rules/
  * https://eslint.org/docs/user-guide/configuring/
  */
 module.exports = {
@@ -10,9 +8,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:vue/essential",
-    "eslint:recommended",
-    "@vue/prettier"
+    "eslint:recommended"
   ],
   // plugins: [
   //   'import'
@@ -28,20 +24,11 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-    // "vue/no-arrow-functions-in-watch": 2,
-
 
     // indent: ['error', 2, {SwitchCase: 1}], // 强制使用一致的缩进
     // 'indent': 0,
     // 'space-before-function-paren': 0, // 强制在 function的左括号之前使用一致的空格
-    // //Vue组件 name命名规则驼峰|短线 ["error", "PascalCase"| "kebab-case"],
-    // 'vue/name-property-casing': 0,
-    // 'vue/html-indent': 0,
-    // 'vue/max-attributes-per-line': 0,
-    // 'vue/html-self-closing': 0,
-    // 'vue/singleline-html-element-content-newline': 'off',
-    // 'vue/multiline-html-element-content-newline': 'off',
-    // 'vue/attribute-hyphenation': 'off',
+
     //
     // // 可以自动fix的配置项(--no-fix)
     // // 禁止使用分号结尾
@@ -118,16 +105,7 @@ module.exports = {
     // 'no-unreachable': 2,
     // 'no-dupe-keys': 2,
     // 'no-duplicate-case': 2,
-    // 'vue/no-dupe-keys': 2,
-    // 'vue/no-duplicate-attributes': 2,
     // 'import/no-duplicates': 2,
-    // 'vue/no-parsing-error': 2,
-    // 'vue/valid-template-root': 2,
-    // 'vue/valid-v-if': 2,
-    // 'vue/valid-v-else-if': 2,
-    // 'vue/valid-v-else': 2,
-    // 'vue/valid-v-for': 2,
-    // 'vue/valid-v-model': 2,
     // 'no-use-before-define': 2,
     // 'no-case-declarations': 2,
     // 'no-array-constructor': 2, // 有利于性能
@@ -142,30 +120,6 @@ module.exports = {
     // 'no-unused-vars': 0,
     // 'no-unused-expressions': 0,
     // 'no-inner-declarations': 0,
-    //
-    // 'vue/no-unused-vars': 0,
-    // 'vue/no-unused-components': 0,
-    // 'vue/require-prop-type-constructor': 0,
-    // 'vue/return-in-computed-property': 0,
-    // 'vue/no-side-effects-in-computed-properties': 0,
-    // 'vue/require-v-for-key': 0,
-    // 'vue/no-use-v-if-with-v-for': 0,
-    // 'vue/require-valid-default-prop': 0,
-    // 'vue/no-async-in-computed-properties': 0,
-    // 'vue/html-closing-bracket-newline': 0,
-    // 'vue/require-default-prop': 0,
-    // 'vue/mustache-interpolation-spacing': 0,
-    // 'vue/require-prop-types': 0,
-    // 'vue/order-in-components': 0,
-    // 'vue/attributes-order': 0,
-    // 'vue/this-in-template': 0,
-    // 'vue/no-confusing-v-for-v-if': 0,
-    // 'vue/no-multi-spaces': 0,
-    // 'vue/no-reserved-keys': 0,
-    // 'vue/html-quotes': 0,
-    // 'vue/html-closing-bracket-spacing': 0,
-    // 'vue/prop-name-casing': 0,
-    // 'vue/no-v-html': 0,
     //
     // 'standard/no-callback-literal': 0,
     // 'standard/array-bracket-even-spacing': 0,

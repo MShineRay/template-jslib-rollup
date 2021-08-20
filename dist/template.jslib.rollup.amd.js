@@ -1,1 +1,15 @@
-define(function(){"use strict";var e={version:"0.0.1",name:"template.jslib.rollup"};return e});
+define(function () { 'use strict';
+
+  var name = "template.jslib.rollup";
+  var version = "0.0.1";
+
+  /*!
+   * xxx
+   */
+  var jsUtils = {};
+  jsUtils.version = version;
+  jsUtils.name = name;
+
+  return jsUtils;
+
+});
