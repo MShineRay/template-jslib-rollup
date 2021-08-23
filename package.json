@@ -4,6 +4,7 @@
   "description": "template js lib rollup",
   "main": "rollup.config.js",
   "scripts": {
+    "build": "rollup -c -w",
     "rollup:dev": "rollup -c -w",
     "rollup:build": "rollup -c",
     "eslint": "",

@@ -6,12 +6,17 @@ import json from '@rollup/plugin-json'
 import resolve from '@rollup/plugin-node-resolve'// 告诉 Rollup 如何查找外部模块
 import babel from '@rollup/plugin-babel'
 import {uglify} from 'rollup-plugin-uglify'
-import {name} from './package.json'
-
+import {name, version, author} from './package.json'
+const banner = `/*!
+  * ${name} v${version}
+  * (c) ${new Date().getFullYear()} ${author}
+  * @license MIT
+  */`
 export default {
   input: 'src/index.js',
   output: [
     {
+      banner,
       file: `dist/${name}.amd.js`,
       format: 'amd', // 浏览器
       name
@@ -59,13 +64,24 @@ export default {
       file: `dist/${name}.iife.min.js`,
       format: 'iife', // 浏览器
       name,
-      plugins: [uglify()]
+      plugins: [uglify({
+        output:{
+          comments: function (node, comment){
+            //以!开头部分的注视进行保留
+            return /^!/.test(comment.value)
+          }
+        }
+      })]
     },
     {
       file: `dist/${name}.umd.min.js`,
       format: 'umd', // UMD format requires a bundle name 浏览器和 Node.js
       name,
-      plugins: [uglify()]
+      plugins: [uglify({
+        output:{
+          preamble: '/** \r\r 版本所有 \r\n 填写日期 \r\n 填写作者信息 */'
+        }
+      })]
     }
   ],
   plugins: [

@@ -1,10 +1,15 @@
+/*!
+  * template.jslib.rollup v0.0.1
+  * (c) 2021 mshineray
+  * @license MIT
+  */
 define(function () { 'use strict';
 
   var name = "template.jslib.rollup";
   var version = "0.0.1";
 
   /*!
-   * xxx
+   * @createDate 2021-08-23
    */
   var jsUtils = {};
   jsUtils.version = version;

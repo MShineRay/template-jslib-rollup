@@ -8,7 +8,7 @@
   var version = "0.0.1";
 
   /*!
-   * xxx
+   * @createDate 2021-08-23
    */
   var jsUtils = {};
   jsUtils.version = version;
