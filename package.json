@@ -50,5 +50,10 @@
   },
   "engines": {
     "node": ">=12.6.0 <=14.17.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
   }
 }
