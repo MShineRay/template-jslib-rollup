@@ -15,7 +15,7 @@ export function addLoadEvent (func) {
   }
 }
 
-export function postSend(data={}){
+export function postSend(url, data={}){
   let oAjax = null
   try {
     oAjax = new XMLHttpRequest()
@@ -24,7 +24,7 @@ export function postSend(data={}){
   }
   const __t = new Date().getTime()
   // post方式打开文件 /cashier
-  oAjax.open('post', '/api/dataPoint?t=' + __t, true)
+  oAjax.open('post', url + '?t=' + __t, true)
   // post相比get方式提交多了个这个
   oAjax.setRequestHeader('Content-type', 'application/json')
   // post发送数据
