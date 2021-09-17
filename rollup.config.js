@@ -5,13 +5,14 @@ import commonjs from '@rollup/plugin-commonjs'// 用来将 CommonJS 转换成 ES
 import json from '@rollup/plugin-json'
 import resolve from '@rollup/plugin-node-resolve'// 告诉 Rollup 如何查找外部模块
 import babel from '@rollup/plugin-babel'
-import {uglify} from 'rollup-plugin-uglify'
-import {name, version, author} from './package.json'
+import { uglify } from 'rollup-plugin-uglify'
+import { name, version, author } from './package.json'
 const banner = `/*!
-  * ${name} v${version}
-  * (c) ${new Date().getFullYear()} ${author}
-  * @license MIT
-  */`
+* ${name} v${version}
+* (c) ${new Date().getFullYear()} ${author}
+* @updateTime ${new Date().toISOString()}
+* @license MIT
+*/`
 export default {
   input: 'src/index.js',
   output: [
