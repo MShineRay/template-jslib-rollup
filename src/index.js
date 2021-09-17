@@ -4,7 +4,7 @@
 import version from './version'
 import name from './name'
 
-const jsUtils = {ddd }
+const jsUtils = { }
 jsUtils.version = version
 jsUtils.name = name
 export default jsUtils
