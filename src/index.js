@@ -5,7 +5,7 @@ import version from './version'
 import name from './name'
 
 
-const jsUtils = { dd }
+const jsUtils = { dd,test commit }
 jsUtils.version = version
 jsUtils.name = name
 export default jsUtils
